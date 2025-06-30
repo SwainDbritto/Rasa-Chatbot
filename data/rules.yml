@@ -1,0 +1,293 @@
+version: "3.1"
+
+rules:
+
+- rule: Respond to bot challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Respond to casual reply
+  steps:
+  - intent: casual_reply
+  - action: utter_reply_casual
+  
+- rule: Say goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Respond to thank you
+  steps:
+  - intent: thank_you
+  - action: utter_thank_you
+
+- rule: Respond to how are you
+  steps:
+  - intent: how_are_you
+  - action: utter_how_are_you
+
+- rule: Respond to mood great
+  steps:
+  - intent: mood_great
+  - action: utter_mood_great
+
+- rule: Respond to mood unhappy
+  steps:
+  - intent: mood_unhappy
+  - action: utter_mood_unhappy
+
+- rule: Respond to affirm
+  steps:
+  - intent: affirm
+  - action: utter_affirm
+
+- rule: Respond to deny
+  steps:
+  - intent: deny
+  - action: utter_deny
+
+- rule: Respond to fallback
+  steps:
+  - intent: fallback
+  - action: utter_fallback
+
+- rule: Respond to number only
+  steps:
+  - intent: number_only
+  - action: utter_number_only
+
+- rule: Respond to payment methods supported
+  steps:
+  - intent: payment_methods_supported
+  - action: utter_payment_methods_supported
+
+- rule: Respond to international payment options
+  steps:
+  - intent: international_payment_options
+  - action: utter_international_payment_options
+
+- rule: Respond to EMI and pay later options
+  steps:
+  - intent: emi_and_pay_later_options
+  - action: utter_emi_and_pay_later_options
+
+- rule: Respond to auto-renewal and management
+  steps:
+  - intent: auto_renewal_and_management
+  - action: utter_auto_renewal_and_management
+
+- rule: Respond to invoices and receipts
+  steps:
+  - intent: invoices_and_receipts
+  - action: utter_invoices_and_receipts
+
+- rule: Respond to refund conditions
+  steps:
+  - intent: refund_conditions
+  - action: utter_refund_conditions
+
+- rule: Respond to refunds subscription plans
+  steps:
+  - intent: refunds_subscription_plans
+  - action: utter_refunds_subscription_plans
+
+- rule: Respond to trial period and refunds
+  steps:
+  - intent: trial_period_and_refunds
+  - action: utter_trial_period_and_refunds
+
+- rule: Respond to refund request procedure
+  steps:
+  - intent: refund_request_procedure
+  - action: utter_refund_request_procedure
+
+- rule: Respond to refund processing time
+  steps:
+  - intent: refund_processing_time
+  - action: utter_refund_processing_time
+
+- rule: Respond to partial refunds
+  steps:
+  - intent: partial_refunds
+  - action: utter_partial_refunds
+
+- rule: Respond to promotional plan refunds
+  steps:
+  - intent: promotional_plan_refunds
+  - action: utter_promotional_plan_refunds
+
+- rule: Respond to refund delay resolution
+  steps:
+  - intent: refund_delay_resolution
+  - action: utter_refund_delay_resolution
+
+- rule: Respond to refund dispute grievance
+  steps:
+  - intent: refund_dispute_grievance
+  - action: utter_refund_dispute_grievance
+
+- rule: Respond to plan upgrade downgrade
+  steps:
+  - intent: plan_upgrade_downgrade
+  - action: utter_plan_upgrade_downgrade
+
+- rule: Respond to expired subscription handling
+  steps:
+  - intent: expired_subscription_handling
+  - action: utter_expired_subscription_handling
+
+- rule: Respond to subscription reactivation
+  steps:
+  - intent: subscription_reactivation
+  - action: utter_subscription_reactivation
+
+- rule: Respond to loyalty rewards and referral
+  steps:
+  - intent: loyalty_rewards_and_referral
+  - action: utter_loyalty_rewards_and_referral
+
+- rule: Respond to view payment history
+  steps:
+  - intent: view_payment_history
+  - action: utter_view_payment_history
+
+- rule: Respond to regional tax compliance
+  steps:
+  - intent: regional_tax_compliance
+  - action: utter_regional_tax_compliance
+
+- rule: Respond to multiple payment methods single transaction
+  steps:
+  - intent: multiple_payment_methods_single_transaction
+  - action: utter_multiple_payment_methods_single_transaction
+
+- rule: Respond to save payment methods
+  steps:
+  - intent: save_payment_methods
+  - action: utter_save_payment_methods
+
+- rule: Respond to disable saved payment methods
+  steps:
+  - intent: disable_saved_payment_methods
+  - action: utter_disable_saved_payment_methods
+
+- rule: Respond to wallet payment charges
+  steps:
+  - intent: wallet_payment_charges
+  - action: utter_wallet_payment_charges
+
+- rule: Respond to cash payment availability
+  steps:
+  - intent: cash_payment_availability
+  - action: utter_cash_payment_availability
+
+- rule: Respond to transaction fraud reporting
+  steps:
+  - intent: transaction_fraud_reporting
+  - action: utter_transaction_fraud_reporting
+
+- rule: Respond to payment failure resolution
+  steps:
+  - intent: payment_failure_resolution
+  - action: utter_payment_failure_resolution
+
+- rule: Respond to payment success notifications
+  steps:
+  - intent: payment_success_notifications
+  - action: utter_payment_success_notifications
+
+- rule: Respond to switch payment mid transaction
+  steps:
+  - intent: switch_payment_mid_transaction
+  - action: utter_switch_payment_mid_transaction
+
+- rule: Respond to download transaction history
+  steps:
+  - intent: download_transaction_history
+  - action: utter_download_transaction_history
+
+- rule: Respond to accidental purchase refund
+  steps:
+  - intent: accidental_purchase_refund
+  - action: utter_accidental_purchase_refund
+
+- rule: Respond to refund escalation
+  steps:
+  - intent: refund_escalation
+  - action: utter_refund_escalation
+
+- rule: Respond to refund request channel
+  steps:
+  - intent: refund_request_channel
+  - action: utter_refund_request_channel
+
+- rule: Respond to double charge resolution
+  steps:
+  - intent: double_charge_resolution
+  - action: utter_double_charge_resolution
+
+- rule: Respond to rejected refund appeal
+  steps:
+  - intent: rejected_refund_appeal
+  - action: utter_rejected_refund_appeal
+
+- rule: Respond to late partial refund
+  steps:
+  - intent: late_partial_refund
+  - action: utter_late_partial_refund
+
+- rule: Respond to promotional offer refunds
+  steps:
+  - intent: promotional_offer_refunds
+  - action: utter_promotional_offer_refunds
+
+- rule: Respond to valid technical issue
+  steps:
+  - intent: valid_technical_issue
+  - action: utter_valid_technical_issue
+
+- rule: Respond to refund timeline start
+  steps:
+  - intent: refund_timeline_start
+  - action: utter_refund_timeline_start
+
+- rule: Respond to refund delay contact
+  steps:
+  - intent: refund_delay_contact
+  - action: utter_refund_delay_contact
+
+- rule: Respond to referral bonus expiry
+  steps:
+  - intent: referral_bonus_expiry
+  - action: utter_referral_bonus_expiry
+
+- rule: Respond to old payment history access
+  steps:
+  - intent: old_payment_history_access
+  - action: utter_old_payment_history_access
+
+- rule: Respond to tax breakdown in payments
+  steps:
+  - intent: tax_breakdown_in_payments
+  - action: utter_tax_breakdown_in_payments
+
+- rule: Respond to download EULA
+  steps:
+  - intent: download_eula
+  - action: utter_download_eula
+
+- rule: Respond to consumer protection compliance
+  steps:
+  - intent: consumer_protection_compliance
+  - action: utter_consumer_protection_compliance
+
+- rule: Respond to greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Fallback when intent confidence is low
+  steps:
+  - intent: nlu_fallback
+  - action: utter_default

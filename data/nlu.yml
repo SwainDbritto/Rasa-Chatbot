@@ -1,0 +1,502 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - good morning
+    - good evening
+    - hello there
+    - hey there
+    - hi there
+    - greetings
+    - what's up?
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you later
+    - have a nice day
+    - good night
+    - catch you later
+    - talk to you soon
+    - farewell
+    - take care
+    - bye bye
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - sure
+    - definitely
+    - absolutely
+    - yeah
+    - sure thing
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - nope
+    - not at all
+    - no way
+    - nah
+    - negative
+    - don't
+    - never mind
+
+- intent: mood_great
+  examples: |
+    - I feel great
+    - I'm good
+    - feeling awesome
+    - I'm doing well
+    - I'm happy
+    - feeling fantastic
+    - I'm fine
+    - doing great
+    - all good
+    - couldn't be better
+
+- intent: mood_unhappy
+  examples: |
+    - I'm sad
+    - not good
+    - feeling bad
+    - I'm unhappy
+    - feeling down
+    - not doing well
+    - I'm upset
+    - feeling terrible
+    - I'm depressed
+    - things aren't good
+
+- intent: how_are_you
+  examples: |
+    - how are you?
+    - what's up?
+    - how's it going?
+    - how do you do?
+    - how are things?
+    - how have you been?
+    - how are you doing?
+    - what's new?
+    - how's everything?
+    - what's happening?
+
+- intent: thank_you
+  examples: |
+    - thanks
+    - thank you
+    - appreciate it
+    - thanks a lot
+    - thank you so much
+    - many thanks
+    - thanks a bunch
+    - much appreciated
+    - thanks for your help
+    - thanks for that
+
+- intent: fallback
+  examples: |
+    - what?
+    - huh?
+    - I don't understand
+    - can you repeat?
+    - sorry?
+    - come again?
+    - what did you say?
+    - please repeat
+    - not sure what you mean
+    - I didn't get that
+
+- intent: number_only
+  examples: |
+    - 1
+    - 2
+    - 3
+    - 10
+    - 100
+    - 99999
+    - 123456
+
+- intent: payment_methods_supported
+  examples: |
+    - What payment methods do you support?
+    - Which payment options can I use on your app?
+    - Do you accept credit cards, debit cards, or UPI?
+    - Can I pay with wallets and net banking?
+    - Are there multiple ways to pay for subscriptions?
+
+- intent: international_payment_options
+  examples: |
+    - Do you support international payments?
+    - Can I pay using an international card?
+    - Are there extra charges for overseas payments?
+    - Do you allow international transactions?
+    - What fees apply to international payments?
+
+- intent: emi_and_pay_later_options
+  examples: |
+    - Do you have EMI options for high-value plans?
+    - Can I pay later for expensive subscriptions?
+    - Is pay-later available in your app?
+    - Are there installment plans for premium subscriptions?
+    - Can I split payments into EMIs?
+
+- intent: auto_renewal_and_management
+  examples: |
+    - Does your app auto-renew subscriptions?
+    - How can I disable auto-renewal on my plan?
+    - Is there a way to manage subscription renewals?
+    - Can I stop my subscription from auto-renewing?
+    - Does it automatically renew after expiry?
+
+- intent: invoices_and_receipts
+  examples: |
+    - Will I get an invoice after payment?
+    - Where can I see my payment receipt?
+    - Are receipts automatically sent?
+    - How do I download my invoices?
+    - Is a bill generated after transactions?
+
+- intent: refund_conditions
+  examples: |
+    - When can I get a refund?
+    - Are refunds possible for technical issues?
+    - Do you offer refunds if I'm not satisfied?
+    - Under what situations can I request a refund?
+    - What is your refund eligibility policy?
+
+- intent: refunds_subscription_plans
+  examples: |
+    - Are refunds for all plans?
+    - Can I get a refund on any subscription plan?
+    - Are refunds available for selected plans only?
+    - Which plans allow refund requests?
+    - Is refund eligibility based on plan type?
+
+- intent: trial_period_and_refunds
+  examples: |
+    - Do you have a trial period with refund option?
+    - Is there a free trial with automatic refunds?
+    - Will I get a refund if I cancel during the trial?
+    - How long is the refund window in trial mode?
+    - Does trial cancellation give a full refund?
+
+- intent: refund_request_procedure
+  examples: |
+    - How do I request a refund?
+    - Is refund request possible via app?
+    - Can I raise a refund request online?
+    - What's the refund process?
+    - Is external communication needed for refunds?
+
+- intent: refund_processing_time
+  examples: |
+    - How long does it take for refunds?
+    - What's the refund processing time?
+    - When will I receive my refund?
+    - Is the refund processed quickly?
+    - How many days to process a refund?
+
+- intent: partial_refunds
+  examples: |
+    - Do you allow partial refunds?
+    - Can I get a refund for the unused period of my subscription?
+    - Is it possible to refund part of my plan?
+    - How do partial refunds work?
+    - Are partial refunds supported in your app?
+
+- intent: promotional_plan_refunds
+  examples: |
+    - Are refunds available for discounted plans?
+    - What happens if I need a refund on a promotional offer?
+    - Can I request a refund for promotional subscriptions?
+    - Do offers and discounts affect refund eligibility?
+    - Are refunds applicable for special offers?
+
+- intent: refund_delay_resolution
+  examples: |
+    - What should I do if my refund isn't credited on time?
+    - Who can I contact if my refund is delayed?
+    - My refund is late, how can I escalate?
+    - How do I resolve a refund delay?
+    - What steps for refund issues after deadline?
+
+- intent: refund_dispute_grievance
+  examples: |
+    - Is there a complaint process for refund disputes?
+    - How do I raise a grievance for refund problems?
+    - Who handles refund disputes in your app?
+    - Can I file a complaint if my refund is rejected?
+    - What's the process for refund grievances?
+
+- intent: plan_upgrade_downgrade
+  examples: |
+    - Can I upgrade my plan mid-subscription?
+    - How do I switch to a cheaper plan?
+    - Can I change my subscription before expiry?
+    - Are plan upgrades allowed while active?
+    - How is pricing adjusted for plan changes?
+
+- intent: expired_subscription_handling
+  examples: |
+    - What happens when my subscription expires?
+    - Is there a grace period after expiry?
+    - Will my subscription stop immediately after expiry?
+    - Can I still use features after plan expiry?
+    - How do you handle expired subscriptions?
+
+- intent: subscription_reactivation
+  examples: |
+    - Can I reactivate a canceled subscription?
+    - Is it possible to restart my plan after cancellation?
+    - How can I restore a canceled subscription?
+    - Are there any conditions for reactivation?
+    - Can I bring back my old subscription?
+
+- intent: loyalty_rewards_and_referral
+  examples: |
+    - Do you have loyalty points or rewards?
+    - Are referral bonuses available in your app?
+    - Can I earn points for payments?
+    - Are rewards convertible into discounts?
+    - Can I use referral bonuses for payments?
+
+- intent: view_payment_history
+  examples: |
+    - How do I check my past payments?
+    - Can I see my transaction history?
+    - Where can I view all my previous transactions?
+    - Is there a payment history section?
+    - Can I access old payment records?
+
+- intent: regional_tax_compliance
+  examples: |
+    - Do you comply with GST in India?
+    - Are taxes like VAT applied for international users?
+    - Is tax breakdown shown on payments?
+    - Do you follow local tax laws?
+    - How are taxes handled in transactions?
+
+- intent: multiple_payment_methods_single_transaction
+  examples: |
+    - Can I use more than one payment method in a single transaction?
+    - Is it possible to split payments between UPI and a card?
+    - Can I combine wallets and net banking for one purchase?
+    - Are multiple payment options allowed together?
+    - How do I pay using two different methods?
+
+- intent: save_payment_methods
+  examples: |
+    - Can I save my card details for future use?
+    - Is there an option to store payment methods in the app?
+    - How can I securely save my UPI ID?
+    - Can I keep payment info saved for later?
+    - Does your app allow saving payment data?
+
+- intent: disable_saved_payment_methods
+  examples: |
+    - How do I delete saved payment methods?
+    - Can I remove my saved card details?
+    - Is it possible to disable stored payment options?
+    - How do I clear saved UPI accounts from your app?
+    - Where can I manage my saved payment info?
+
+- intent: wallet_payment_charges
+  examples: |
+    - Are there extra charges for using wallets?
+    - Do I pay a fee when using Paytm or PhonePe?
+    - Is UPI cheaper than wallets?
+    - Are wallet transactions charged differently?
+    - Does paying by wallet cost more than UPI?
+
+- intent: cash_payment_availability
+  examples: |
+    - Does Intucate accept cash payments?
+    - Can I pay in cash for subscriptions?
+    - Is cash on delivery an option for plans?
+    - Can I make offline cash payments?
+    - Is it possible to use cash at any location?
+
+- intent: transaction_fraud_reporting
+  examples: |
+    - What should I do if I suspect payment fraud?
+    - How do I report a suspicious transaction?
+    - Can I flag a fraudulent payment?
+    - Who do I contact for payment security issues?
+    - Is there a way to report payment fraud in the app?
+
+- intent: payment_failure_resolution
+  examples: |
+    - What happens if my payment fails repeatedly?
+    - How do you handle multiple failed payment attempts?
+    - Can I retry payment after failure?
+    - Why is my transaction failing and what can I do?
+    - How to resolve frequent payment failures?
+
+- intent: payment_success_notifications
+  examples: |
+    - Do you send a notification for successful payments?
+    - Will I be informed when my payment is complete?
+    - How do I know if my transaction went through?
+    - Is there a confirmation message after paying?
+    - Are payment confirmations sent via email?
+
+- intent: switch_payment_mid_transaction
+  examples: |
+    - Can I switch payment methods while paying?
+    - Is it possible to change payment options during checkout?
+    - How do I change payment method midway?
+    - Can I cancel current payment and select a new one?
+    - Can I retry with a different method if one fails?
+
+- intent: download_transaction_history
+  examples: |
+    - Can I download my payment history as PDF?
+    - How do I export my past transactions?
+    - Is there an option to download invoices and payments?
+    - Can I get a PDF of all my payment records?
+    - Where can I save my transaction history file?
+
+- intent: accidental_purchase_refund
+  examples: |
+    - Can I get a refund if I bought the wrong subscription?
+    - I made a wrong purchase — can I cancel and get a refund?
+    - Is refund possible for accidental buys?
+    - What happens if I mistakenly subscribe to a plan?
+    - How do I reverse a wrong payment?
+
+- intent: refund_escalation
+  examples: |
+    - How do I escalate a refund request if no one responds?
+    - What should I do if my refund is pending too long?
+    - Can I complain about refund delays?
+    - Is there a refund escalation process?
+    - Who handles unresolved refund requests?
+
+- intent: refund_request_channel
+  examples: |
+    - Can I request a refund via phone call?
+    - Is refund request allowed through email?
+    - How can I contact support for a refund?
+    - Do I need to use the app for refund requests?
+    - Which channels are available for refunds?
+
+- intent: double_charge_resolution
+  examples: |
+    - How do I fix a double payment issue?
+    - What should I do if I get charged twice?
+    - Can I get a refund for duplicate payments?
+    - Who handles double transaction complaints?
+    - Is there a process to resolve extra charges?
+
+- intent: rejected_refund_appeal
+  examples: |
+    - Can I appeal a rejected refund?
+    - Is there a review process for denied refunds?
+    - What if my refund request gets declined?
+    - How to contest a refund rejection?
+    - Can I escalate a refused refund claim?
+
+- intent: late_partial_refund
+  examples: |
+    - Can I ask for a partial refund after the deadline?
+    - Is late partial refund possible?
+    - Will you consider refunding unused time after cutoff?
+    - Can I still get a part refund if it's late?
+    - What if I missed the refund window?
+
+- intent: promotional_offer_refunds
+  examples: |
+    - Are refunds possible for promotional offer purchases?
+    - Can I get my money back for discounted plans?
+    - Do offers affect refund eligibility?
+    - What's the refund policy for promotional deals?
+    - Is refund allowed on special discounted subscriptions?
+
+- intent: valid_technical_issue
+  examples: |
+    - What counts as a valid technical issue for refunds?
+    - Which problems are considered refund-worthy?
+    - Can app crashes be a reason for a refund?
+    - What kind of bugs qualify for refunds?
+    - How do you define a technical issue for refund eligibility?
+
+- intent: refund_timeline_start
+  examples: |
+    - When does the refund timeline begin?
+    - Is refund processing counted from request or approval date?
+    - From what date do you start the refund timeline?
+    - When is the refund countdown initiated?
+    - Does the refund timer start after request submission?
+
+- intent: refund_delay_contact
+  examples: |
+    - Who do I contact if refund takes more than 30 days?
+    - What should I do if my refund is still not received after a month?
+    - Is there a helpline for long refund delays?
+    - Can I raise a complaint if refund exceeds 30 days?
+    - Where to report refunds delayed beyond 30 days?
+
+- intent: referral_bonus_expiry
+  examples: |
+    - Do referral bonuses expire?
+    - Is there a validity period for referral rewards?
+    - When do loyalty points or referral bonuses expire?
+    - How long are bonuses valid?
+    - Are unused referral points time-limited?
+
+- intent: old_payment_history_access
+  examples: |
+    - Can I view transaction history from old subscriptions?
+    - How do I check payments made for past plans?
+    - Is it possible to access older payment records?
+    - Where can I see my past subscription transactions?
+    - Can I get old invoices from earlier plans?
+
+- intent: tax_breakdown_in_payments
+  examples: |
+    - Does the app show tax breakdown in payments?
+    - Will GST or VAT be shown separately in the bill?
+    - Are taxes itemized in the payment receipt?
+    - Can I see how much tax was charged?
+    - Is tax included in total or shown separately?
+
+- intent: download_eula
+  examples: |
+    - Is the End User License Agreement downloadable?
+    - Where can I download your EULA?
+    - Can I access the app's EULA document?
+    - Is there a file for terms and conditions?
+    - How do I get a copy of the license agreement?
+
+- intent: consumer_protection_compliance
+  examples: |
+    - Are your refunds compliant with consumer protection laws?
+    - Do you follow the latest refund regulations?
+    - Is your refund policy legally compliant?
+    - Are consumer protection rules followed for refunds?
+    - Does your app meet government refund guidelines?
+
+- intent: bot_challenge
+  examples: |
+    - Are you a bot?
+    - Is this a bot?
+    - Are you human?
+
+- intent: casual_reply
+  examples: |
+    - What's good?
+    - How's it hangin'?
+    - Yo, what's up?
+

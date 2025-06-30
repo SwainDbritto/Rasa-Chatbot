@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Custom Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<div class="chat-container" id="chatContainer" role="dialog" aria-labelledby="chatHeader">
+    <div class="chat-header" id="chatHeader">
+        <h3>Chatbot</h3>
+    </div>
+
+    <div class="chat-window" id="chatWindow" role="log" aria-live="polite">
+        <!-- messages will appear here -->
+    </div>
+
+    <div class="prompt-container" id="promptContainer" style="display: none;">
+        <button class="prompt-button" data-message="product list">View product list</button>
+        <button class="prompt-button" data-message="Ask about prices">Ask about prices</button>
+        <button class="prompt-button" data-message="hi">Say hi</button>
+    </div>
+
+    <div class="chat-input-area">
+        <input type="text" id="userInput" placeholder="Start typing a message..." aria-label="Type your message">
+        <button id="sendMessageBtn" class="send-button" aria-label="Send message"><i class="material-icons">send</i></button>
+    </div>
+</div>
+
+<button class="chat-action-button chat-icon-button" id="chatIconButton" aria-label="Open chat">
+    <img src="your_chat_icon.png" alt="Chat Icon" onerror="this.src='https://via.placeholder.com/30?text=Chat';">
+</button>
+
+<button class="chat-action-button close-chat-button" id="closeChatButton" aria-label="Close chat">
+    <i class="material-icons">close</i>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>

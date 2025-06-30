@@ -1,0 +1,95 @@
+version: "3.1"
+
+stories:
+- story: Greet and ask about payment methods
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: payment_methods_supported
+  - action: utter_payment_methods_supported
+  - intent: affirm
+  - action: utter_affirm
+
+- story: Greet and ask about refunds
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: refund_conditions
+  - action: utter_refund_conditions
+  - intent: refund_request_procedure
+  - action: utter_refund_request_procedure
+
+- story: Unhappy user seeking refund
+  steps:
+  - intent: mood_unhappy
+  - action: utter_mood_unhappy
+  - intent: refund_conditions
+  - action: utter_refund_conditions
+  - intent: refund_request_procedure
+  - action: utter_refund_request_procedure
+  - intent: thank_you
+  - action: utter_thank_you
+
+- story: Payment failure and resolution
+  steps:
+  - intent: payment_failure_resolution
+  - action: utter_payment_failure_resolution
+  - intent: affirm
+  - action: utter_affirm
+  - intent: thank_you
+  - action: utter_thank_you
+
+- story: Ask about trial period and deny
+  steps:
+  - intent: trial_period_and_refunds
+  - action: utter_trial_period_and_refunds
+  - intent: deny
+  - action: utter_deny
+
+- story: Refund delay escalation
+  steps:
+  - intent: refund_delay_resolution
+  - action: utter_refund_delay_resolution
+  - intent: refund_delay_contact
+  - action: utter_refund_delay_contact
+  - intent: affirm
+  - action: utter_affirm
+
+- story: Casual conversation
+  steps:
+  - intent: casual_reply
+  - action: utter_reply_casual
+  - intent: how_are_you
+  - action: utter_how_are_you
+  - intent: mood_great
+  - action: utter_mood_great
+
+- story: Fallback handling
+  steps:
+  - intent: fallback
+  - action: utter_fallback
+  - intent: greet
+  - action: utter_greet
+
+- story: Number only confusion
+  steps:
+  - intent: number_only
+  - action: utter_number_only
+  - intent: fallback
+  - action: utter_fallback
+
+- story: Subscription reactivation inquiry
+  steps:
+  - intent: subscription_reactivation
+  - action: utter_subscription_reactivation
+  - intent: affirm
+  - action: utter_affirm
+  - intent: thank_you
+  - action: utter_thank_you
+
+- story: Bot challenge and goodbye
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - intent: goodbye
+  - action: utter_goodbye

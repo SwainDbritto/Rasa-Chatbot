@@ -1,0 +1,29 @@
+# Python cache and virtual environments
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+
+# Rasa generated files
+models/
+*.db
+*.sqlite
+*.sqlite3
+events.db
+
+# Logs
+logs/
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# VS Code and IDE settings (optional)
+.vscode/
+.idea/
+
+# Rasa cache files
+.cache/

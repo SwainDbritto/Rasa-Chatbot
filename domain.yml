@@ -1,0 +1,300 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - how_are_you
+  - thank_you
+  - fallback
+  - number_only
+  - bot_challenge
+  - casual_reply
+  - payment_methods_supported
+  - international_payment_options
+  - emi_and_pay_later_options
+  - auto_renewal_and_management
+  - invoices_and_receipts
+  - refund_conditions
+  - refunds_subscription_plans
+  - trial_period_and_refunds
+  - refund_request_procedure
+  - refund_processing_time
+  - partial_refunds
+  - promotional_plan_refunds
+  - refund_delay_resolution
+  - refund_dispute_grievance
+  - plan_upgrade_downgrade
+  - expired_subscription_handling
+  - subscription_reactivation
+  - loyalty_rewards_and_referral
+  - view_payment_history
+  - regional_tax_compliance
+  - multiple_payment_methods_single_transaction
+  - save_payment_methods
+  - disable_saved_payment_methods
+  - wallet_payment_charges
+  - cash_payment_availability
+  - transaction_fraud_reporting
+  - payment_failure_resolution
+  - payment_success_notifications
+  - switch_payment_mid_transaction
+  - download_transaction_history
+  - accidental_purchase_refund
+  - refund_escalation
+  - refund_request_channel
+  - double_charge_resolution
+  - rejected_refund_appeal
+  - late_partial_refund
+  - promotional_offer_refunds
+  - valid_technical_issue
+  - refund_timeline_start
+  - refund_delay_contact
+  - referral_bonus_expiry
+  - old_payment_history_access
+  - tax_breakdown_in_payments
+  - download_eula
+  - consumer_protection_compliance
+
+actions:
+  - action_default_fallback
+  - utter_greet
+  - utter_goodbye
+  - utter_affirm
+  - utter_deny
+  - utter_mood_great
+  - utter_mood_unhappy
+  - utter_how_are_you
+  - utter_thank_you
+  - utter_fallback
+  - utter_number_only
+  - utter_iamabot
+  - utter_reply_casual
+  - utter_payment_methods_supported
+  - utter_international_payment_options
+  - utter_emi_and_pay_later_options
+  - utter_auto_renewal_and_management
+  - utter_invoices_and_receipts
+  - utter_refund_conditions
+  - utter_refunds_subscription_plans
+  - utter_trial_period_and_refunds
+  - utter_refund_request_procedure
+  - utter_refund_processing_time
+  - utter_partial_refunds
+  - utter_promotional_plan_refunds
+  - utter_refund_delay_resolution
+  - utter_refund_dispute_grievance
+  - utter_plan_upgrade_downgrade
+  - utter_expired_subscription_handling
+  - utter_subscription_reactivation
+  - utter_loyalty_rewards_and_referral
+  - utter_view_payment_history
+  - utter_regional_tax_compliance
+  - utter_multiple_payment_methods_single_transaction
+  - utter_save_payment_methods
+  - utter_disable_saved_payment_methods
+  - utter_wallet_payment_charges
+  - utter_cash_payment_availability
+  - utter_transaction_fraud_reporting
+  - utter_payment_failure_resolution
+  - utter_payment_success_notifications
+  - utter_switch_payment_mid_transaction
+  - utter_download_transaction_history
+  - utter_accidental_purchase_refund
+  - utter_refund_escalation
+  - utter_refund_request_channel
+  - utter_double_charge_resolution
+  - utter_rejected_refund_appeal
+  - utter_late_partial_refund
+  - utter_promotional_offer_refunds
+  - utter_valid_technical_issue
+  - utter_refund_timeline_start
+  - utter_refund_delay_contact
+  - utter_referral_bonus_expiry
+  - utter_old_payment_history_access
+  - utter_tax_breakdown_in_payments
+  - utter_download_eula
+  - utter_consumer_protection_compliance
+  - utter_default
+
+responses:
+  utter_greet:
+    - text: "Hello! Welcome to our school assistant bot. How can I help you today?"
+
+  utter_goodbye:
+    - text: "Goodbye! Have a great day!"
+
+  utter_affirm:
+    - text: "Got it, thanks for confirming!"
+
+  utter_deny:
+    - text: "Alright, let me know how I can assist you further."
+
+  utter_mood_great:
+    - text: "That's wonderful to hear!"
+
+  utter_mood_unhappy:
+    - text: "I'm sorry to hear that. Hope your day gets better!"
+
+  utter_how_are_you:
+    - text: "I'm doing great, thank you! How can I help you today?"
+
+  utter_thank_you:
+    - text: "You're welcome! 😊"
+
+  utter_fallback:
+    - text: "I'm sorry, I didn't get that. Could you please rephrase?"
+
+  utter_number_only:
+    - text: "It looks like you entered a number. Could you clarify what you mean?"
+
+  utter_iamabot:
+    - text: "I am a bot, here to assist you!"
+
+  utter_reply_casual:
+    - text: "I'm doing great, thank you!"
+
+  utter_payment_methods_supported:
+    - text: "All payment methods including credit cards, debit cards, UPI, wallets, and net banking are supported."
+
+  utter_international_payment_options:
+    - text: "No, payments need to be done in INR."
+
+  utter_emi_and_pay_later_options:
+    - text: "Payment Gateway will provide details on this."
+
+  utter_auto_renewal_and_management:
+    - text: "Payment Gateway will provide details on this."
+
+  utter_invoices_and_receipts:
+    - text: "In their mailbox, a mail from -dhariaenterprisesindia@gmail.com would have arrived on the date of purchase."
+
+  utter_refund_conditions:
+    - text: "Refunds are only offered for technical issues, where the app is not working after bug fixes for a month."
+
+  utter_refunds_subscription_plans:
+    - text: "Refunds are applicable to all subscription plans."
+
+  utter_trial_period_and_refunds:
+    - text: "No, we do not offer a trial period."
+
+  utter_refund_request_procedure:
+    - text: "There is no refund policy except for technical reasons. For technical reasons, users have to reach out to dhariaenterprisesindia@gmail.com."
+
+  utter_refund_processing_time:
+    - text: "Refunds are processed within 30 days."
+
+  utter_partial_refunds:
+    - text: "No, partial refunds are not allowed."
+
+  utter_promotional_plan_refunds:
+    - text: "Not applicable, we do not handle refunds for promotional or discounted plans."
+
+  utter_refund_delay_resolution:
+    - text: "Share a mail with dhariaenterprisesindia@gmail.com with the subject 'Refunds Ombudsman'."
+
+  utter_refund_dispute_grievance:
+    - text: "Yes, the Refunds Ombudsman handles disputes if they pertain to technical reasons."
+
+  utter_plan_upgrade_downgrade:
+    - text: "No, plans are fixed for specific durations. Duration can only be increased by topping up."
+
+  utter_expired_subscription_handling:
+    - text: "There is a 2-day grace period for top-ups; otherwise, a new subscription must be purchased."
+
+  utter_subscription_reactivation:
+    - text: "Yes, canceled subscriptions can be reactivated, but new pricing policies will apply."
+
+  utter_loyalty_rewards_and_referral:
+    - text: "Yes, check our Referral Bonus policy for details."
+
+  utter_view_payment_history:
+    - text: "Yes, past transactions and payment history can be viewed within the Profile Section."
+
+  utter_regional_tax_compliance:
+    - text: "Yes, we comply with all Indian tax laws, including GST."
+
+  utter_multiple_payment_methods_single_transaction:
+    - text: "No, multiple payment methods cannot be combined for a single transaction."
+
+  utter_save_payment_methods:
+    - text: "Yes, payment details can be saved for convenience during future transactions."
+
+  utter_disable_saved_payment_methods:
+    - text: "To disable saved payment methods, go to 'Account Settings' and remove saved cards."
+
+  utter_wallet_payment_charges:
+    - text: "No, there are no additional charges for wallets compared to UPI."
+
+  utter_cash_payment_availability:
+    - text: "No, Intucate does not offer cash payment options."
+
+  utter_transaction_fraud_reporting:
+    - text: "Immediately report the issue to dhariaenterprisesindia@gmail.com."
+
+  utter_payment_failure_resolution:
+    - text: "If a payment fails repeatedly, check your payment method or contact support."
+
+  utter_payment_success_notifications:
+    - text: "Yes, users receive both app and email notifications for successful payments."
+
+  utter_switch_payment_mid_transaction:
+    - text: "No, switching payment methods mid-transaction is not supported."
+
+  utter_download_transaction_history:
+    - text: "Yes, transaction history can be downloaded as a PDF from the Profile Section."
+
+  utter_accidental_purchase_refund:
+    - text: "No, refunds are not allowed for incorrect purchases unless it is due to app error."
+
+  utter_refund_escalation:
+    - text: "Escalate the request to Refunds Ombudsman at dhariaenterprisesindia@gmail.com."
+
+  utter_refund_request_channel:
+    - text: "Refunds can only be requested via email."
+
+  utter_double_charge_resolution:
+    - text: "Contact support with evidence of both charges for resolution."
+
+  utter_rejected_refund_appeal:
+    - text: "Yes, you can appeal rejected requests via Refunds Ombudsman."
+
+  utter_late_partial_refund:
+    - text: "Requests made post-deadline are not eligible for refunds."
+
+  utter_promotional_offer_refunds:
+    - text: "No, refunds are not applicable to purchases made during offers."
+
+  utter_valid_technical_issue:
+    - text: "Issues such as app crashes or inability to access content qualify as valid technical issues."
+
+  utter_refund_timeline_start:
+    - text: "The timeline starts from the date of request."
+
+  utter_refund_delay_contact:
+    - text: "Email dhariaenterprisesindia@gmail.com with 'Urgent Refund Delay' as the subject."
+
+  utter_referral_bonus_expiry:
+    - text: "Referral bonuses expire after 6 months of being credited."
+
+  utter_old_payment_history_access:
+    - text: "Yes, payment history from all active and past subscriptions is available."
+
+  utter_tax_breakdown_in_payments:
+    - text: "Yes, the app displays a tax breakdown in the invoice section."
+
+  utter_download_eula:
+    - text: "Yes, the agreement is available in the 'Legal' section of the app."
+
+  utter_consumer_protection_compliance:
+    - text: "Yes, Intucate complies with the latest consumer protection regulations for refunds."
+
+  utter_default:
+    - text: "Sorry, I didn't understand that. Could you please rephrase your question?"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
